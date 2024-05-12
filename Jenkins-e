@@ -15,11 +15,11 @@ pipeline {
         }
         stage("Deploy") {
             steps {
-                sshagent(['tomcat09']) {
+                sshagent(['tomcat11']) {
                     sh """
-                        scp -o StrictHostKeyChecking=no target/boxfuse-sample-java-war-hello.war ubuntu@65.2.175.142:/home/ubuntu/apache-tomcat-9.0.89/webapps
-                        ssh ubuntu@65.2.175.142 '/home/ubuntu/apache-tomcat-9.0.89/bin/shutdown.sh'
-                        ssh ubuntu@65.2.175.142 '/home/ubuntu/apache-tomcat-9.0.89/bin/startup.sh'
+                        scp -o StrictHostKeyChecking=no target/boxfuse-sample-java-war-hello.war ubuntu@13.234.77.233:/home/ubuntu/apache-tomcat-9.0.89/webapps
+                        ssh ubuntu@13.234.77.233 '/home/ubuntu/apache-tomcat-9.0.89/bin/shutdown.sh'
+                        ssh ubuntu@13.234.77.233 '/home/ubuntu/apache-tomcat-9.0.89/bin/startup.sh'
                     """
                 }
             }
