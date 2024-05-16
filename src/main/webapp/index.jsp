@@ -1,7 +1,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>welcome to Hyderabad rakesh</title>
+    <title>welcome to Hyderabad </title>
     <style>
         body {
             text-align: center;
@@ -55,7 +55,7 @@
     </style>
 </head>
 <body>
-    <h1>Welcome to hyderabad </h1>
+    <h1>Welcome to hyderabad rakesh sunke </h1>
     <h2>Menu</h2>
 
     <div id="menu">
